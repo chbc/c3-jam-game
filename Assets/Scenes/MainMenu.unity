@@ -199,7 +199,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -489,6 +489,10 @@ PrefabInstance:
     - target: {fileID: 546202008811587760, guid: d803942d1899e1544b49e2304703ad5e, type: 3}
       propertyPath: m_Name
       value: MenuPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162950898518846929, guid: d803942d1899e1544b49e2304703ad5e, type: 3}
+      propertyPath: m_Name
+      value: Background
       objectReference: {fileID: 0}
     - target: {fileID: 6074377094098975287, guid: d803942d1899e1544b49e2304703ad5e, type: 3}
       propertyPath: m_Pivot.x
