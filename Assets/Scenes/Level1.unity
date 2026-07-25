@@ -25,8 +25,8 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubtractiveShadowColor: {r: 0.42265937, g: 0.627451, b: 0.41960785, a: 1}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 8b7dd0809c7c6498789fa32a61eaa6cb, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -223,7 +223,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 60}
-  m_LocalScale: {x: 15, y: 1, z: 15}
+  m_LocalScale: {x: 35.7885, y: 2.3859, z: 35.7885}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1461074137}
@@ -565,7 +565,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0.7660377, g: 0.7385055, b: 0.6634176, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -3012,6 +3012,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2091510076}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1035691719835875024
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2844975529206159525, guid: d4514d09a87a3744abbe20a08a6ce641, type: 3}
+      propertyPath: m_Name
+      value: SkateGirl
+      objectReference: {fileID: 0}
+    - target: {fileID: 3184241230509982239, guid: d4514d09a87a3744abbe20a08a6ce641, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3184241230509982239, guid: d4514d09a87a3744abbe20a08a6ce641, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.227
+      objectReference: {fileID: 0}
+    - target: {fileID: 3184241230509982239, guid: d4514d09a87a3744abbe20a08a6ce641, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 3184241230509982239, guid: d4514d09a87a3744abbe20a08a6ce641, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3184241230509982239, guid: d4514d09a87a3744abbe20a08a6ce641, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3184241230509982239, guid: d4514d09a87a3744abbe20a08a6ce641, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3184241230509982239, guid: d4514d09a87a3744abbe20a08a6ce641, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3184241230509982239, guid: d4514d09a87a3744abbe20a08a6ce641, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3184241230509982239, guid: d4514d09a87a3744abbe20a08a6ce641, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3184241230509982239, guid: d4514d09a87a3744abbe20a08a6ce641, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d4514d09a87a3744abbe20a08a6ce641, type: 3}
 --- !u!1001 &5800541793596261759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3242,7 +3299,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3941915643750572817, guid: a3c35e7c5095a354db0daf94e8a13869, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3377,3 +3434,4 @@ SceneRoots:
   - {fileID: 1796242457}
   - {fileID: 1757380486}
   - {fileID: 1531377674}
+  - {fileID: 1035691719835875024}
