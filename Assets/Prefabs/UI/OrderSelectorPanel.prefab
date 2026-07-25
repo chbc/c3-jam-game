@@ -2886,7 +2886,7 @@ GameObject:
   - component: {fileID: 258105735392394677}
   - component: {fileID: 1745500717953891977}
   - component: {fileID: 912657075772148915}
-  - component: {fileID: 3554218664045498206}
+  - component: {fileID: 4440434002511576570}
   m_Layer: 5
   m_Name: OrderSelectorPanel
   m_TagString: Untagged
@@ -2952,7 +2952,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &3554218664045498206
+--- !u!114 &4440434002511576570
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2961,7 +2961,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8717853978626745114}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ff48cafaefc43e45af81f37fd370e5e, type: 3}
+  m_Script: {fileID: 11500000, guid: 8c64bf0beadf57409b19f84823f89646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8819522557154618838
@@ -3181,7 +3181,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8789104848977025070}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4440434002511576570}
+        m_TargetAssemblyTypeName: OrderSelection, Assembly-CSharp
+        m_MethodName: OnPlayButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5972215841598640624
 MonoBehaviour:
   m_ObjectHideFlags: 0

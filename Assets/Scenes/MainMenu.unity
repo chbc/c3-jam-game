@@ -576,11 +576,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: OrderSelectorPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 8717853978626745114, guid: ea92a9fc2a46c0f4d919f421f10976f7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea92a9fc2a46c0f4d919f421f10976f7, type: 3}
+--- !u!1 &5542247764599645702 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8717853978626745114, guid: ea92a9fc2a46c0f4d919f421f10976f7, type: 3}
+  m_PrefabInstance: {fileID: 5542247764599645701}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8564872774542426383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -592,6 +601,10 @@ PrefabInstance:
     - target: {fileID: 546202008811587760, guid: d803942d1899e1544b49e2304703ad5e, type: 3}
       propertyPath: m_Name
       value: MenuPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 546202008811587760, guid: d803942d1899e1544b49e2304703ad5e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6074377094098975287, guid: d803942d1899e1544b49e2304703ad5e, type: 3}
       propertyPath: m_Pivot.x
@@ -673,6 +686,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8857783920124950105, guid: d803942d1899e1544b49e2304703ad5e, type: 3}
+      propertyPath: orderSelection
+      value: 
+      objectReference: {fileID: 5542247764599645702}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
