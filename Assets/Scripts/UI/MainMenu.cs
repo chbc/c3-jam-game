@@ -3,13 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    void Start()
-    {
-        Debug.Log("Start");
-    }
+    [SerializeField]
+    GameObject orderSelection;
 
-    public void OnPlayButtonPressed()
+    public void OnLoginButtonPressed()
     {
-        SceneManager.LoadScene("Level1");
+        this.orderSelection.SetActive(true);
+        this.gameObject.SetActive(false);
     }
 }
