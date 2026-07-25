@@ -14,6 +14,14 @@ public class MainMenu : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetButtonDown("Fire"))
+        {
+            OnLoginButtonPressed();
+        }
+    }
+
     public void OnLoginButtonPressed()
     {
         this.orderSelection.SetActive(true);
