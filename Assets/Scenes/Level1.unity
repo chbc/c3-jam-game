@@ -3240,6 +3240,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VictoryPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3941915643750572817, guid: a3c35e7c5095a354db0daf94e8a13869, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3349,6 +3353,10 @@ PrefabInstance:
     - target: {fileID: 3941915643750572817, guid: 617853a34ff3a4f49b03988ccf395121, type: 3}
       propertyPath: m_Name
       value: LosePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3941915643750572817, guid: 617853a34ff3a4f49b03988ccf395121, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
