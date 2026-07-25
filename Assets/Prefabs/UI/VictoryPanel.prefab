@@ -315,6 +315,7 @@ GameObject:
   - component: {fileID: 4695954872072081572}
   - component: {fileID: 1610117064192690225}
   - component: {fileID: 8079955367471898632}
+  - component: {fileID: 2360338736022777740}
   m_Layer: 5
   m_Name: HUD_Stargame
   m_TagString: Untagged
@@ -398,6 +399,27 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 2, y: 2}
   m_UseGraphicAlpha: 1
+--- !u!95 &2360338736022777740
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879650021759119602}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2230102335483118055
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,6 +565,7 @@ GameObject:
   - component: {fileID: 1394602726073443957}
   - component: {fileID: 6115441363951273975}
   - component: {fileID: 4064695559285796837}
+  - component: {fileID: 2550415273708725550}
   m_Layer: 5
   m_Name: Star 3
   m_TagString: Untagged
@@ -560,7 +583,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2916989783327789421}
   m_Father: {fileID: 3879806544195222296}
@@ -608,6 +631,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!225 &2550415273708725550
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3090747319699589682}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &3150747578564571915
 GameObject:
   m_ObjectHideFlags: 0
@@ -880,6 +915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ff48cafaefc43e45af81f37fd370e5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  orderSelection: {fileID: 0}
 --- !u!1 &5402370321895673103
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,6 +927,7 @@ GameObject:
   - component: {fileID: 7477123582069020453}
   - component: {fileID: 5226872930284762391}
   - component: {fileID: 6925221195795116645}
+  - component: {fileID: 8322200369380513922}
   m_Layer: 5
   m_Name: Star 2
   m_TagString: Untagged
@@ -908,7 +945,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4333324850985979525}
   m_Father: {fileID: 3879806544195222296}
@@ -956,6 +993,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!225 &8322200369380513922
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5402370321895673103}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &6112896465405150170
 GameObject:
   m_ObjectHideFlags: 0
@@ -968,6 +1017,7 @@ GameObject:
   - component: {fileID: 1270308507900568294}
   - component: {fileID: 249589882590308064}
   - component: {fileID: 1890812019875824880}
+  - component: {fileID: 1023188294359515750}
   m_Layer: 5
   m_Name: Bg (2)
   m_TagString: Untagged
@@ -1052,6 +1102,27 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 2, y: 2}
   m_UseGraphicAlpha: 1
+--- !u!95 &1023188294359515750
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6112896465405150170}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9e217ca7e472d2d4da626d455fb8a8be, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6578925023843150120
 GameObject:
   m_ObjectHideFlags: 0
@@ -1323,6 +1394,7 @@ GameObject:
   - component: {fileID: 8305586813360048920}
   - component: {fileID: 555083841097946024}
   - component: {fileID: 7521203219689627173}
+  - component: {fileID: 8307403558475502364}
   m_Layer: 5
   m_Name: Star 1
   m_TagString: Untagged
@@ -1340,7 +1412,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1711565370179074285}
   m_Father: {fileID: 3879806544195222296}
@@ -1388,6 +1460,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!225 &8307403558475502364
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7816229237634615105}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &8249444320908490866
 GameObject:
   m_ObjectHideFlags: 0
