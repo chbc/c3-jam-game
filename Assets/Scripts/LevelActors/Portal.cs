@@ -3,24 +3,43 @@ using UnityEngine;
 public class Portal : MonoBehaviour
 {
     [SerializeField]
-    Transform targetPortal;
+    private Portal _targetPortal;
+
+    [SerializeField]
+    private GameObject _top;
+
+    [SerializeField]
+    private Transform _coloredTop;
 
     private void Start()
     {
-        if (targetPortal == null)
+        if (_targetPortal == null)
         {
             Debug.LogError("Missing target portal!");
         }
+
+        _top.transform.position = _coloredTop.position + new Vector3(0.0f, 5.0f, 0.0f);
+    }
+
+    public void DestroyTop()
+    {
+        Destroy(_top);
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        DestroyTop();
+        _targetPortal.DestroyTop();
+
         CharacterController characterController = other.gameObject.GetComponent<CharacterController>();
 
         characterController.enabled = false;
 
-        other.transform.position = targetPortal.position + (targetPortal.forward * 2.0f); ;
-        other.transform.rotation = targetPortal.rotation;
+        Transform targetTransform = _targetPortal.transform;
+        Vector3 resultPosition = targetTransform.position + (targetTransform.forward * 2.0f);
+        resultPosition.y = characterController.transform.position.y;
+        other.transform.position = resultPosition;
+        other.transform.rotation = targetTransform.rotation;
 
         characterController.enabled = true;
     }

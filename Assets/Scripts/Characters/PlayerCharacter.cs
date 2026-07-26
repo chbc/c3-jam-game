@@ -38,6 +38,16 @@ public class PlayerCharacter : MonoBehaviour
         _characterController.Move(resultVelocity);
     }
 
+    public void SetSpeed(float newSpeed)
+    {
+        _speed = newSpeed;
+    }
+
+    public void RestoreSpeed()
+    {
+        _speed = _maxSpeed;
+    }
+
     private void OnGameplayStart()
     {
         _speed = _maxSpeed;
