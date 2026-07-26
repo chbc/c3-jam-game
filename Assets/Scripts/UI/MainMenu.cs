@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
@@ -16,7 +15,7 @@ public class MainMenu : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Fire"))
+        if (Input.GetButtonDown("Fire1"))
         {
             OnLoginButtonPressed();
         }

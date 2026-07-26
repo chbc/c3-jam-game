@@ -5,7 +5,7 @@ public class OrderSelection : MonoBehaviour
 {
     private void Update()
     {
-        if (Input.GetButtonDown("Fire"))
+        if (Input.GetButtonDown("Fire1"))
         {
             OnPlayButtonPressed();
         }

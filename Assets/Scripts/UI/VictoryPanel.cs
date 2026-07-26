@@ -3,6 +3,18 @@ using UnityEngine.SceneManagement;
 
 public class VictoryPanel : MonoBehaviour
 {
+    private void Update()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            OnRestartButtonPressed();
+        }
+        else if (Input.GetButtonDown("Jump"))
+        {
+            OnQuitButtonPressed();
+        }
+    }
+
     public void OnRestartButtonPressed()
     {
         SceneManager.LoadScene("Level1");

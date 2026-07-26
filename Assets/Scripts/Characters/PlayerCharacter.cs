@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
@@ -21,9 +20,8 @@ public class PlayerCharacter : MonoBehaviour
         _characterController = GetComponent<CharacterController>();
         _characterTransform = this.transform;
 
+        MessagesManager.Instance.OnGameplayStart += OnGameplayStart;
         MessagesManager.Instance.OnPlayerReachCheckpoint += OnPlayerReachCheckpoint;
-        
-        StartCoroutine(PrepareToRun());
     }
 
     private void Update()
@@ -39,14 +37,10 @@ public class PlayerCharacter : MonoBehaviour
         _characterController.Move(resultVelocity);
     }
 
-    private IEnumerator PrepareToRun()
+    private void OnGameplayStart()
     {
-        yield return new WaitForSeconds(1.0f);
-
         _speed = _maxSpeed;
         _rotationSpeed = _maxRotationSpeed;
-
-        yield return null;
     }
 
     private void OnPlayerReachCheckpoint()
