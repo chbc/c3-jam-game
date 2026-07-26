@@ -14,6 +14,14 @@ public class TutorialHUD : MonoBehaviour
         MessagesManager.Instance.OnPlayerReachCheckpoint += OnPlayerReachCheckpoint;
     }
 
+    private void Update()
+    {
+        if (Input.GetButtonDown("Cancel"))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+    }
+
     private void OnPlayerReachCheckpoint()
     {
         _goalMessage.text = _conclusionText;

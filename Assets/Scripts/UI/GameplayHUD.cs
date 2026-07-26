@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameplayHUD : MonoBehaviour
 {
@@ -14,6 +15,14 @@ public class GameplayHUD : MonoBehaviour
 
         MessagesManager.Instance.OnPlayerReachCheckpoint += OnPlayerReachCheckpoint;
         MessagesManager.Instance.OnTimeUp += OnTimeUp;
+    }
+
+    private void Update()
+    {
+        if (Input.GetButtonDown("Cancel"))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
     }
 
     private void OnPlayerReachCheckpoint()

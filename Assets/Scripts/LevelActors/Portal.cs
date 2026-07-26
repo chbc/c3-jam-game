@@ -37,7 +37,7 @@ public class Portal : MonoBehaviour
 
         Transform targetTransform = _targetPortal.transform;
         Vector3 resultPosition = targetTransform.position + (targetTransform.forward * 2.0f);
-        resultPosition.y = characterController.transform.position.y;
+        resultPosition.y = 0.5f;
         other.transform.position = resultPosition;
         other.transform.rotation = targetTransform.rotation;
 

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
@@ -25,5 +26,15 @@ public class MainMenu : MonoBehaviour
     {
         this.orderSelection.SetActive(true);
         this.gameObject.SetActive(false);
+    }
+
+    public void OnCreditsButtonPressed()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
+    public void OnQuitButtonPressed()
+    {
+        Application.Quit();
     }
 }

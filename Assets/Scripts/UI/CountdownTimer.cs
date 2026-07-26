@@ -9,6 +9,16 @@ public class CountdownTimer : MonoBehaviour
     private float _currentTime;
     private bool _isRunning = false;
 
+    private static CountdownTimer _instance = null;
+    public static CountdownTimer Instance => _instance;
+
+    public float PastTime => _maxTime - _currentTime;
+
+    private void Awake()
+    {
+        _instance = this;
+    }
+
     private void Start()
     {
         _currentTime = _maxTime;
