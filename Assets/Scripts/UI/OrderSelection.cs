@@ -13,6 +13,6 @@ public class OrderSelection : MonoBehaviour
     
     public void OnPlayButtonPressed()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Tutorial1");
     }
 }
