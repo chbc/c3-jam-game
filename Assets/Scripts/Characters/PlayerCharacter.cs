@@ -22,6 +22,7 @@ public class PlayerCharacter : MonoBehaviour
 
         MessagesManager.Instance.OnGameplayStart += OnGameplayStart;
         MessagesManager.Instance.OnPlayerReachCheckpoint += OnPlayerReachCheckpoint;
+        MessagesManager.Instance.OnTimeUp += OnTimeUp;
     }
 
     private void Update()
@@ -44,6 +45,12 @@ public class PlayerCharacter : MonoBehaviour
     }
 
     private void OnPlayerReachCheckpoint()
+    {
+        _speed = 0.0f;
+        _rotationSpeed = 0.0f;
+    }
+
+    private void OnTimeUp()
     {
         _speed = 0.0f;
         _rotationSpeed = 0.0f;

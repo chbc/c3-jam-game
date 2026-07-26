@@ -27,6 +27,7 @@ public class CountdownTimer : MonoBehaviour
             {
                 _currentTime = 0;
                 _isRunning = false;
+                MessagesManager.Instance.NotifyTimeUp();
             }
 
             UpdateTimerText();

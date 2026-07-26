@@ -13,10 +13,16 @@ public class GameplayHUD : MonoBehaviour
         }
 
         MessagesManager.Instance.OnPlayerReachCheckpoint += OnPlayerReachCheckpoint;
+        MessagesManager.Instance.OnTimeUp += OnTimeUp;
     }
 
     private void OnPlayerReachCheckpoint()
     {
         _victoryPanel.SetActive(true);
+    }
+
+    private void OnTimeUp()
+    {
+        _losePanel.SetActive(true);
     }
 }

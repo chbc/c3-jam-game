@@ -8,6 +8,7 @@ public class MessagesManager : MonoBehaviour
 
     public voidFunction OnGameplayStart;
     public voidFunction OnPlayerReachCheckpoint;
+    public voidFunction OnTimeUp;
     
     private static MessagesManager _instance = null;
 
@@ -39,9 +40,13 @@ public class MessagesManager : MonoBehaviour
         yield return null;
     }
 
-
     public void NotifyPlayerReachCheckpoint()
     {
         OnPlayerReachCheckpoint();
+    }
+
+    public void NotifyTimeUp()
+    {
+        OnTimeUp();
     }
 }
